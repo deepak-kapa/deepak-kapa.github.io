@@ -13,7 +13,7 @@ profile:
     <p>Bengaluru, India</p>
     <p><a href="mailto:deepak_k1@ph.iitr.ac.in">deepak_k1@ph.iitr.ac.in</a></p>
 
-selected_papers: true
+selected_papers: false
 social: true
 
 announcements:
