@@ -6,7 +6,7 @@ subtitle: Robotics · Actuator Design · Mechanical Intelligence
 
 profile:
   align: right
-  image: profile_pic.jpeg
+  image: profile_pic.png
   image_circular: true
   more_info: >
     <p><strong>IIT Roorkee · IISc (Stoch Lab) · Cenizas Labs</strong></p>
