@@ -1,13 +1,46 @@
-.bundle
-.sass-cache
-.jekyll-cache
-.jekyll-metadata
-.DS_store
-.ruby-version
-.tweet-cache
-Gemfile.lock
-assets/libs/
+# Built/Deployed files (these get copied to root for GitHub Pages)
+/*.html
+/news/
+/projects/
+/cv/
+/publications/
+/papers-i-like/
+/project-ideas/
+/portfolio/
+/blog/
+/sitemap.xml
+/feed.xml
+
+# Built assets (generated during build)
+/assets/css/main.css
+/assets/css/main.css.map
+/assets/js/*-setup.js
+/assets/js/search-data.js
+/assets/img/*-480.webp
+/assets/img/*-800.webp
+/assets/img/*-1400.webp
+
+# Jekyll build directory
+_site/
+
+# Jekyll cache
+.jekyll-cache/
+.sass-cache/
+
+# Ruby
+.bundle/
+vendor/
+
+# OS files
+.DS_Store
+Thumbs.db
+*~
+*.swp
+.tweet-cache/
+
+# IDE
+.vscode/
+.idea/
+
+# Dependencies
 node_modules/
-vendor
-.idea
-.venv
