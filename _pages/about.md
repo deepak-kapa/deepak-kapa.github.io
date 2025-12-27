@@ -1,34 +1,40 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: Robotics · Actuator Design · Mechanical Intelligence
 
 profile:
   align: right
-  image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image: prof_pic.jpeg
+  image_circular: true
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p><strong>IIT Roorkee · IISc (Stoch Lab) · Cenizas Labs</strong></p>
+    <p>Bengaluru, India</p>
+    <p><a href="mailto:deepak_k1@ph.iitr.ac.in">deepak_k1@ph.iitr.ac.in</a></p>
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+selected_papers: true
+social: true
 
 announcements:
-  enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
+  enabled: true
+  scrollable: true
+  limit: 5
 
 latest_posts:
-  enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+  enabled: false
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am a senior undergraduate at **IIT Roorkee**, with research affiliations at the **Stochastic Robotics Lab, IISc**, **CREATE Lab, EPFL**, **Plecnik Group, University of Notre Dame** and **Cenizas Labs**, working at the intersection of **mechanical design, actuation, and legged robotics**. I am deeply interested in building **mechanically intelligent robotic systems**—robots whose performance emerges as much from their embodiment as from control.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+I love **designing, fabricating, and experimentally validating novel mechanical systems**, particularly for **quadruped and humanoid robots**. My work centers on actuator design and optimization, where I explore how transmission architecture, stiffness, backlash, and mass distribution influence real-world robot performance. I am especially motivated by designs that simplify control through thoughtful and simple mechanical design.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+My primary research interests include:
+- Mechanical design of **quadruped and humanoid robots**
+- **Actuator optimization and design** for legged systems
+- Simulation-driven testing of novel mechanisms
+- **Compliant, bio-inspired, and origami-based robots**
+- **Space robotics** and robots for extreme environments
+
+
+> *“Build castles in the sky.”*
