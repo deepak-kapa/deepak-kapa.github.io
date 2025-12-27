@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://your-username.github.io/sitemap.xml
+Sitemap: https://deepak-kapa.github.io/sitemap.xml
