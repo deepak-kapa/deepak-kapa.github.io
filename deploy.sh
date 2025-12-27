@@ -1,10 +1,14 @@
 #!/bin/bash
-# Deployment script for GitHub Pages
+# Clean deployment script for GitHub Pages
 
-echo "🚀 Starting deployment process..."
+echo "🚀 Starting deployment..."
 
-# Build the site
-echo "📦 Building site with Jekyll..."
+# Remove old _site
+echo "🗑️  Cleaning old build..."
+rm -rf _site
+
+# Build fresh
+echo "📦 Building site..."
 JEKYLL_ENV=production bundle exec jekyll build
 
 if [ $? -ne 0 ]; then
@@ -12,26 +16,24 @@ if [ $? -ne 0 ]; then
     exit 1
 fi
 
-# Remove old built files from root (keep source files)
-echo "🧹 Cleaning old built files..."
-rm -rf 404.html blog books cv feed.xml index.html news papers-i-like people portfolio project-ideas projects publications repositories sitemap.xml teaching 2>/dev/null
+# Clean root of old built files (keep sources!)
+echo "🧹 Removing old built HTML from root..."
+rm -rf 404.html index.html sitemap.xml feed.xml \
+       news projects cv publications papers-i-like project-ideas \
+       people repositories teaching 2>/dev/null
 
-# Copy new built files to root
-echo "📋 Copying new built files..."
+# Deploy new build
+echo "📋 Deploying to root..."
 cp -r _site/* .
 cp _site/.nojekyll . 2>/dev/null || true
 
-# Stage all changes
-echo "📝 Staging changes..."
-git add .
-
-# Commit
+# Git operations
 echo "💾 Committing..."
+git add .
 git commit -m "Deploy: $(date '+%Y-%m-%d %H:%M:%S')"
 
-# Push to GitHub
-echo "⬆️  Pushing to GitHub..."
+echo "⬆️  Pushing..."
 git push
 
-echo "✅ Deployment complete!"
-echo "🌐 Your site will be live at: https://deepak-kapa.github.io"
+echo "✅ Deployed!"
+echo "🌐 Live at: https://deepak-kapa.github.io"
