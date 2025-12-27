@@ -200,9 +200,6 @@ ul.task-list input[type="checkbox"] {
 
   img {
     width: 100%;
-    aspect-ratio: 1/1;
-    object-fit: cover;
-    border-radius: 50%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
 
@@ -216,6 +213,13 @@ ul.task-list input[type="checkbox"] {
       margin: 0;
     }
   }
+}
+
+// Circular profile images
+img.rounded-circle {
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 50% !important;
 }
 
 .profile.float-right {

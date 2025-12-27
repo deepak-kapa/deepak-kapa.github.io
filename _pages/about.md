@@ -7,7 +7,7 @@ subtitle: Robotics Engineer & Researcher
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image_circular: true # crops the image to make it circular
   more_info: >
     <p>BTech Engineering Physics</p>
     <p>IIT Roorkee, India</p>
