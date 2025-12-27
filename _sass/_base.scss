@@ -199,6 +199,9 @@ ul.task-list input[type="checkbox"] {
   width: 100%;
 
   img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
     border-radius: 50%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
