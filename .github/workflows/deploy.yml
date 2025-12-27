@@ -39,15 +39,18 @@ jobs:
       - name: Update _config.yml
         run: |
           sed -i 's|url: .*$|url: https://${{ github.repository_owner }}.github.io|' _config.yml
-          sed -i 's|baseurl: .*$|baseurl: /${{ github.event.repository.name }}|' _config.yml
+          sed -i 's|baseurl: .*$|baseurl:|' _config.yml
       
       - name: Install dependencies
-        run: bundle install
+        run: |
+          export PATH="$HOME/.local/share/gem/ruby/3.2.0/bin:$PATH"
+          bundle config set --local path 'vendor/bundle'
+          bundle install
       
       - name: Build site
-        run: bundle exec jekyll build
-        env:
-          JEKYLL_ENV: production
+        run: |
+          export PATH="$HOME/.local/share/gem/ruby/3.2.0/bin:$PATH"
+          JEKYLL_ENV=production bundle exec jekyll build --baseurl ""
       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
