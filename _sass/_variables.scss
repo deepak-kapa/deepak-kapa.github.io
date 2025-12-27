@@ -1,4 +1,17 @@
 /* Safe variables for GitHub Pages (old Sass) */
+// ---- GitHub Pages compatibility fallback colors ----
+$black-color: #000000 !default;
+$white-color: #ffffff !default;
+$gray-color: #6c757d !default;
+$light-gray-color: #dee2e6 !default;
+$dark-gray-color: #343a40 !default;
+$primary-color: #007bff !default;
+$secondary-color: #6c757d !default;
+$success-color: #28a745 !default;
+$danger-color: #dc3545 !default;
+$warning-color: #ffc107 !default;
+$info-color: #17a2b8 !default;
+
 
 $white: #ffffff;
 $black: #000000;
